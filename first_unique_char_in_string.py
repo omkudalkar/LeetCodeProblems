@@ -41,12 +41,16 @@ def firstUniqChar(s: str) -> int:
     return first_unique_index
 
 
-
-
-
-
 def main():
-    unique_index = firstUniqChar("aabb")
-    print(unique_index)
+    test_firstUniqChar()
+
+
+def test_firstUniqChar():
+    assert (firstUniqChar("leetcode")) == 0
+    assert (firstUniqChar("loveleetcode")) == 2
+    assert (firstUniqChar("aabb")) == -1
+
+
+
 
 main()
