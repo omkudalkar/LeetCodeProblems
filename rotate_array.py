@@ -16,9 +16,13 @@ def rotate(input_arr : list, k : int):
     return new_arr
 
 def main():
-    input_arr = [1,2,3,4,5,6,7]
-    k=3
-    rotated_array = rotate(input_arr, k)
-    print(rotated_array)
+    test_rotate()
+
+
+def test_rotate():
+    assert rotate([1,2,3,4], 1) == [4,1,2,3]
+    assert rotate([1,2,3,4,5,6,7], 3) == [5,6,7,1,2,3,4]
+    assert rotate([1,2,3,4], 4) == [1,2,3,4]
+
 
 main()
